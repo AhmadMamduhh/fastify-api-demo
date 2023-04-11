@@ -14,10 +14,11 @@ const getItem = (req, reply) => {
 }
 
 const addItem = (req, reply) => {
-  const { name } = req.body
+  const { name, message } = req.body
   const item = {
     id: uuidv4(),
     name,
+    message
   }
 
   items = [...items, item]
