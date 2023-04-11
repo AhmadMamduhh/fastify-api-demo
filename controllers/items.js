@@ -35,9 +35,9 @@ const deleteItem = (req, reply) => {
 
 const updateItem = (req, reply) => {
   const { id } = req.params
-  const { name } = req.body
+  const { name, message } = req.body
 
-  items = items.map((item) => (item.id === id ? { id, name } : item))
+  items = items.map((item) => (item.id === id ? { id, name, message } : item))
 
   item = items.find((item) => item.id === id)
 

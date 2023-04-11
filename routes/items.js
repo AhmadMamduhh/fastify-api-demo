@@ -12,6 +12,7 @@ const Item = {
   properties: {
     id: { type: 'string' },
     name: { type: 'string' },
+    message: { type: 'string' },
   },
 }
 
@@ -44,6 +45,7 @@ const postItemOpts = {
       required: ['name'],
       properties: {
         name: { type: 'string' },
+        message: {type: "string"}
       },
     },
     response: {
